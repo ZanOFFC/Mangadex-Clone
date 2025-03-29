@@ -1,0 +1,73 @@
+/* Reader Page Styles */
+.reader-container {
+  padding: 20px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reader-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background-color: var(--background);
+  position: sticky;
+  top: 70px;
+  z-index: 50;
+}
+
+.reader-controls button {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.reader-controls button:hover:not(:disabled) {
+  background-color: var(--primary-dark);
+}
+
+.reader-controls button:disabled {
+  background-color: var(--text-lighter);
+  cursor: not-allowed;
+}
+
+.reader-controls span {
+  font-weight: 500;
+}
+
+.reader-content {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+}
+
+.reader-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reader-controls {
+    top: 60px;
+    padding: 10px 0;
+  }
+  
+  .reader-controls button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .reader-content {
+    padding: 10px;
+  }
+}
