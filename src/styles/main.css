@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #4a6bff;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --light-text: #777;
+  --background-color: #fff;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+.error {
+  text-align: center;
+  padding: 40px;
+  color: #d32f2f;
+  font-size: 1.2rem;
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--background-color);
+  box-shadow: var(--card-shadow);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.logo-icon {
+  margin-right: 10px;
+  font-size: 1.8rem;
+}
+
+.search-box {
+  display: flex;
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.search-box input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-box button {
+  border-radius: 0 4px 4px 0;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--background-color);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer p {
+  margin-bottom: 10px;
+  color: var(--light-text);
+}
+
+.footer a {
+  color: var(--primary-color);
+  }
