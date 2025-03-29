@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getLatestManga, searchManga } from '../services/mangadex';
 import MangaCard from '../components/MangaCard';
-import './Home.css';
+import './styles/Home.css';
 
 const Home = () => {
   const [mangaList, setMangaList] = useState([]);
