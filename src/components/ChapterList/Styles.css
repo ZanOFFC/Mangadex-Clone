@@ -1,0 +1,41 @@
+/* Chapter List Styles */
+.chapter-list {
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  padding: 10px 0;
+}
+
+.chapter-item {
+  display: block;
+  padding: 12px 20px;
+  color: var(--text);
+  text-decoration: none;
+  transition: var(--transition);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.chapter-item:last-child {
+  border-bottom: none;
+}
+
+.chapter-item:hover {
+  background-color: var(--primary-light);
+}
+
+.chapter-number {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.chapter-title {
+  color: var(--text-light);
+  margin-left: 5px;
+}
+
+/* Empty State */
+.empty-chapters {
+  text-align: center;
+  padding: 30px;
+  color: var(--text-light);
+}
