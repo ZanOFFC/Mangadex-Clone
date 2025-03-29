@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getMangaDetails, getMangaChapters } from '../services/mangadex';
 import ChapterList from '../components/ChapterList';
-import './MangaDetail.css';
+import './styles/MangaDetail.css';
 
 const MangaDetail = () => {
   const { id } = useParams();
