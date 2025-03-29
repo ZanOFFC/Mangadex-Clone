@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4a6bff" />
+    <meta name="description" content="Baca manga bahasa Indonesia gratis dengan MangaDex API" />
+    
+    <title>MangaID - Pembaca Manga Indonesia</title>
+    
+    <!-- Preconnect untuk optimasi -->
+    <link rel="preconnect" href="https://api.mangadex.org" />
+    <link rel="preconnect" href="https://uploads.mangadex.org" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #d32f2f; color: white; padding: 1rem; text-align: center; z-index: 9999;">
+            Aplikasi ini membutuhkan JavaScript untuk berfungsi dengan baik.
+        </div>
+    </noscript>
+    
+    <div id="root">
+        <!-- Loading placeholder akan ditimpa oleh React -->
+        <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+            <i class="fas fa-book-open fa-spin" style="font-size: 3rem; color: #4a6bff;"></i>
+            <p style="margin-top: 1rem; font-family: 'Poppins', sans-serif;">Memuat aplikasi...</p>
+        </div>
+    </div>
+</body>
+</html>
