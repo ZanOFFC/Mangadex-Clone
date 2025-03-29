@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getChapterImages } from '../services/mangadex';
-import './Reader.css';
+import './styles/Reader.css';
 
 const Reader = () => {
   const { chapterId } = useParams();
